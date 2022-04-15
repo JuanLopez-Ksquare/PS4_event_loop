@@ -1,0 +1,82 @@
+body,html{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    height: 100%;
+    width: 100%;
+    font-size: 350%;
+}
+
+.twelve{
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15%;
+}
+
+.three{
+    grid-column: 3/3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.six{
+    grid-column: 2/3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15%;
+}
+
+.nine{
+    grid-column: 1/1;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+}
+
+.mainHand {
+    width: 50%;
+    right: 50%;
+    position: absolute;
+    top: 50%;
+    border-radius: 6px;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+  }
+  
+  .mainHand.hours {
+    width: 8%;
+    height: 1%;
+    z-index: 3;
+    background-color: grey;
+  }
+  
+  .mainHand.minutes {
+    height: 1%;
+    z-index: 10;
+    width: 11%;
+    background-color: black;
+  }
+  
+  .mainHand.seconds {
+    background: red;
+    width: 13%;
+    height: 2px;
+  }
+  
